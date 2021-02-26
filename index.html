@@ -1,19 +1,23 @@
 <!DOCTYPE html>
-
 <html>
 	<head>
 		<title>Test Sever</title>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
     		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
     <style>
-    #panorama {
+    #panorama-viewer {
         width: 1280px;
         height: 720px;
+    }
+    #viewer-container {
+	display: flex;
+	justify-content: center;
+	align-content: center;
     }
     </style>
 	</head>
 	<body>
-		<!--
+		<!-- Alternative method
 		<iframe 
 			width="600" 
 			height="400"
@@ -21,12 +25,14 @@
 			style="border-style:none;" 
 			src="https://cdn.pannellum.org/2.5/pannellum.htm#panorama=https%3A//photo-bucket.us-east-1.linodeobjects.com/360-Deck.jpg&title=360-deck">
 		</iframe>
-			-->
-		<div id="panorama"></div>
+		-->
+		<div id="viewer-container">
+			<div id="panorama-viewer"></div>
+		</div>
 		<script>
-			pannellum.viewer('panorama', {
+			pannellum.viewer('panorama-viewer', {
 				"type": "equirectangular",
-				"panorama": "https://i.imgur.com/qxrvBJa.png",
+				"panorama": "https://i.imgur.com/qxrvBJa.png", 
 				"autoRotate": 5,
 				"autoLoad": true
 			});
