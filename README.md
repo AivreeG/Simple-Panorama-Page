@@ -1,4 +1,4 @@
----
+<!---
 Author: Aivree Gomez
 Date: 26 February 2020
 linkcolor: blue
@@ -15,7 +15,7 @@ header-includes: |
   \lfoot{Created by Aivree Gomez}
   \rfoot{26 February 2020}
 # PDF version generated with Pandoc
----
+--->
 
 # Embedding Panoramas with [Panellum](https://pannellum.org)
 
